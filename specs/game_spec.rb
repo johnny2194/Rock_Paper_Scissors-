@@ -15,22 +15,22 @@ class TestGame < Minitest::Test
   end
 
   def test_draw
-    assert_equal( "Draw!", @game4.winner?)
+    assert_equal( "Draw!", @game4.winner)
   end
 
   def test_paper_wins
-    assert_equal( "paper wins!", @game1.winner?)
-    assert_equal( "paper wins!", @game6.winner?)
+    assert_equal( "paper wins!", @game1.winner)
+    assert_equal( "paper wins!", @game6.winner)
   end
 
   def test_rock_wins
-    assert_equal( "rock wins!", @game3.winner?)
-    assert_equal( "rock wins!", @game7.winner?)
+    assert_equal( "rock wins!", @game3.winner)
+    assert_equal( "rock wins!", @game7.winner)
   end
 
   def test_scissors_wins
-    assert_equal( "scissors wins!", @game2.winner?)
-    assert_equal( "scissors wins!", @game5.winner?)
+    assert_equal( "scissors wins!", @game2.winner)
+    assert_equal( "scissors wins!", @game5.winner)
   end
 
 

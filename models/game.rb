@@ -1,12 +1,11 @@
 class Game
-  attr_reader :choice1, :choice2
 
   def initialize(choice1, choice2)
     @choice1 = choice1
     @choice2 = choice2
   end 
 
-  def winner?
+  def winner
 
     show_down = [@choice1, @choice2]
     winning_outcomes = [ ["paper", "rock"], ["rock", "scissors"], ["scissors", "paper"]]
@@ -21,5 +20,4 @@ class Game
   end
 
 end 
-
 
